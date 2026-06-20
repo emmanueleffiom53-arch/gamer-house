@@ -3,28 +3,49 @@ import "../styles/Dashboard.css";
 function Dashboard() {
   return (
     <div className="dashboard">
-      <h1>🎮 Gamer Dashboard</h1>
-
       <div className="profile-card">
-        <h2>Player: ShadowX</h2>
-        <p>Rank: Gold III</p>
-        <p>Points: 2500</p>
+        <div className="avatar">🎮</div>
+
+        <div>
+          <h1>ShadowX</h1>
+          <p>Rank: Gold III</p>
+          <p>Points: 2500</p>
+        </div>
       </div>
 
       <div className="stats-grid">
         <div className="stat-card">
-          <h3>🏆 Tournaments</h3>
-          <p>12 Played</p>
+          <h2>🏆 12</h2>
+          <p>Tournaments</p>
         </div>
 
         <div className="stat-card">
-          <h3>🥇 Wins</h3>
-          <p>8 Wins</p>
+          <h2>🥇 8</h2>
+          <p>Wins</p>
         </div>
 
         <div className="stat-card">
-          <h3>🔥 Win Rate</h3>
-          <p>67%</p>
+          <h2>🔥 67%</h2>
+          <p>Win Rate</p>
+        </div>
+      </div>
+
+      <div className="matches-card">
+        <h2>Recent Matches</h2>
+
+        <div className="match">
+          <span>EA FC 26</span>
+          <span className="win">Won +50</span>
+        </div>
+
+        <div className="match">
+          <span>Valorant</span>
+          <span className="loss">Lost -10</span>
+        </div>
+
+        <div className="match">
+          <span>PUBG Mobile</span>
+          <span className="win">Won +30</span>
         </div>
       </div>
     </div>
