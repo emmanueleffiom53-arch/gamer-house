@@ -1,0 +1,37 @@
+.dashboard {
+  min-height: 100vh;
+  background: #070b14;
+  color: white;
+  padding: 40px;
+}
+
+.dashboard h1 {
+  color: #00f7ff;
+}
+
+.profile-card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: 1px solid #00f7ff33;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: #111827;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 0 20px #00f7ff;
+}

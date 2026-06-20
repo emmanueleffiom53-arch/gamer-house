@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background: #070b14;
+  font-family: Arial, sans-serif;
+}
+.leaderboard-section {
+  padding: 60px 40px;
+  color: white;
+}
+
+.leaderboard-card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #00f7ff33;
+}
+
+.leaderboard-card p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+
+.hero h1 {
+  font-size: 4rem;
+  color: #00f7ff;
+  text-shadow:
+    0 0 10px #00f7ff,
+    0 0 20px #00f7ff,
+    0 0 40px #00f7ff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #00f7ff;
+  color: black;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 20px #00f7ff;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #00f7ff;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #00f7ff;
+  color: black;
+}
+
+.games-section {
+  padding: 60px 40px;
+  color: white;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.game-card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.game-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00f7ff;
+}
+.tournaments-section {
+  padding: 60px 40px;
+  color: white;
+}
+
+.tournament-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.tournament-card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #00f7ff33;
+  transition: 0.3s;
+}
+
+.tournament-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #00f7ff;
+}
+.leaderboard-section {
+  padding: 60px 40px;
+  color: white;
+}
+
+.leaderboard-card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #00f7ff33;
+}
+
+.leaderboard-card p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+@keyframes glow {
+  0% {
+    text-shadow:
+      0 0 10px #00f7ff,
+      0 0 20px #00f7ff;
+  }
+
+  50% {
+    text-shadow:
+      0 0 20px #00f7ff,
+      0 0 40px #00f7ff;
+  }
+
+  100% {
+    text-shadow:
+      0 0 10px #00f7ff,
+      0 0 20px #00f7ff;
+  }
+}
+
+.hero h1 {
+  animation: glow 2s infinite;
+}
