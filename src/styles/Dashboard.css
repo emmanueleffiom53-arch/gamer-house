@@ -107,3 +107,28 @@
 .loss {
   color: #ef4444;
 }
+.logout-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  background: #ef4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  opacity: 0.9;
+}
+.profile-image {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 3px solid #00f7ff;
+
+  box-shadow: 0 0 15px #00f7ff;
+}

@@ -1,15 +1,32 @@
 import "../styles/Dashboard.css";
-
+import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 function Dashboard() {
+  const navigate = useNavigate();
+const { user, logout } = useContext(AuthContext);
   return (
     <div className="dashboard">
       <div className="profile-card">
         <div className="avatar">🎮</div>
 
         <div>
-          <h1>ShadowX</h1>
+          <h1>{user ? user.name : "Guest"}</h1>
           <p>Rank: Gold III</p>
           <p>Points: 2500</p>
+
+        <button
+  onClick={() => {
+    logout();
+    navigate("/login");
+  }}
+  className="logout-btn"
+>
+  Logout
+</button>
+<button onClick={() => navigate("/profile")}>
+  View Profile
+</button>
         </div>
       </div>
 

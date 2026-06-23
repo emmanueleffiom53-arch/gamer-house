@@ -1,0 +1,51 @@
+.profile-page {
+  min-height: 100vh;
+  background: #070b14;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background: #111827;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background: #1f2937;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3rem;
+
+  border: 3px solid #00f7ff;
+}
+
+.nickname {
+  color: #00f7ff;
+}
+
+.profile-card button {
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #00f7ff;
+  cursor: pointer;
+}
