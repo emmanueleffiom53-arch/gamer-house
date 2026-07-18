@@ -6,9 +6,20 @@ function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
 
  const login = (username) => {
-  setUser({
-    name: username,
-  });
+ setUser({
+  name: username,
+  nickname: "",
+  bio: "",
+  rank: "Bronze I",
+  points: 0,
+});
+};
+
+const updateProfile = (data) => {
+  setUser((prevUser) => ({
+    ...prevUser,
+    ...data,
+  }));
 };
 
   const logout = () => {
@@ -17,11 +28,12 @@ function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{
-        user,
-        login,
-        logout,
-      }}
+     value={{
+  user,
+  login,
+  updateProfile,
+  logout,
+}}
     >
       {children}
     </AuthContext.Provider>

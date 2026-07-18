@@ -7,6 +7,10 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Services from "./pages/Services";
 import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
+import Store from "./pages/Store";
+import Library from "./pages/Library";
+import Hub from "./pages/Hub";
 
 function App() {
   return (
@@ -19,6 +23,10 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/services" element={<Services />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/store" element={<Store />} />
+        <Route path="/library" element={<Library />} />
+        <Route path="/hub" element={<Hub />} />
       </Routes>
     </BrowserRouter>
   );

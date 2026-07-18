@@ -13,6 +13,7 @@ function Navbar() {
         <Link to="/register">Register</Link>
         <Link to="/dashboard">Dashboard</Link>
         <Link to="/profile">Profile</Link>
+        <Link to="/hub">Hub</Link>
       </div>
     </nav>
     
