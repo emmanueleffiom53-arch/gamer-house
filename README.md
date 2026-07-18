@@ -53,3 +53,16 @@ npm run dev
 ## 👨‍💻 Author
 
 Emmanuel Akim-Umoh
+## 📸 Screenshots
+
+### Home
+
+![Home](images/home.png)
+
+### Dashboard
+
+![Dashboard](images/dashboard.png)
+
+### Profile
+
+![Profile](images/profile.png)
